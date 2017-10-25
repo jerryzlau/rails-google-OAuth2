@@ -31,6 +31,13 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# google OAuth2
+gem 'google-api-client'
+
+# Hide API keys and secrets 
+# run bundle exec figaro install to get application.yml
+gem 'figaro'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
