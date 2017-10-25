@@ -1,1 +1,1 @@
-Rails google OAuth2 functionality 
+Simple Rails Google OAuth2
