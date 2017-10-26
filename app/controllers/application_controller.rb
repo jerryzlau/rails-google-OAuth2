@@ -22,13 +22,13 @@ class ApplicationController < ActionController::Base
     user.update_attributes(
       access_token: @client.access_token,
       refresh_token: @client.refresh_token
-    ) if @client.refresh_token 
-  end 
+    ) if @client.refresh_token
+  end
 
   def setup_calendar(user)
     setup_client(user.access_token, user.refresh_token)
     refresh_token(user)
-    @calendar_service = Google::Apis::CalendarV3::CalendarService.new 
+    @calendar_service = Google::Apis::CalendarV3::CalendarService.new
   end
 
   def list_calendars

@@ -23,7 +23,7 @@ class AuthController < ApplicationController
     if create_or_update_user(response)
       # we will render calendar instead
       # render json: @user
-      setup_client(@user)
+      setup_calendar(@user)
       list_calendars
     else 
       render json: @user.errors.full_messages
